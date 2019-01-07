@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  fizzbuzz-service:
+    container_name: fizzbuzz-service
+    image: golfapipol/fizzbuzz-service:latest
+    build:
+      context: .
+    ports:
+    - "3000:3000"

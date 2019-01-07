@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "cd71e447-c8d6-4267-88d7-58e9181d8e47",
+		"name": "fizzbuzz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fizzbuzz",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c99eb130-244a-42ff-9ae3-586454950d0e",
+						"exec": [
+							"pm.test(data[\"number\"] + \" Should response \"+data[\"expected\"], function () {",
+							"    pm.expect(pm.response.text()).to.include(data[\"expected\"]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/fizzbuzz?number={{number}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fizzbuzz"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "{{number}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

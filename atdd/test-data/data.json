@@ -1,0 +1,18 @@
+[
+    {
+        "number": "3",
+        "expected": "Fizz"
+    },
+    {
+        "number": "4",
+        "expected": "4"
+    },
+    {
+        "number": "5",
+        "expected": "Buzz"
+    },
+    {
+        "number": "15",
+        "expected": "FizzBuzz"
+    }
+]
